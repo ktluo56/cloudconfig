@@ -11,7 +11,7 @@ spring:
     name: dept-provider
   
 providerController:
-  val: 5001dev1
+  val: 5001dev2
 
 server:
   port: 5001
