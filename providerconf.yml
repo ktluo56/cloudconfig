@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: dept-provider
   profiles:
     active:
     - dev
@@ -6,9 +8,7 @@ server:
   port: 5001
 
 
-spring:
-  application:
-    name: dept-provider
+
 eureka:
   client:
     service-url:
