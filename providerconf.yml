@@ -2,45 +2,31 @@ spring:
   profiles:
     active:
     - dev
-ff:
-  fa: df
-providerController:
-  val: 5001dev22  
-    
----
-spring:
-  profiles: dev     #开发环境
-  application:
-    name: dept-provider
-  
-providerController:
-  val: 5001dev2
-
 server:
   port: 5001
 
 
-    
+spring:
+  application:
+    name: dept-provider
 eureka:
   client:
     service-url:
        defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
 
----    
+
+---
 spring:
-  profiles: test   
-  application:
-    name: dept-provider
+  profiles: dev     #开发环境
+
+providerController:
+  val: 5001dev
+
+
+
+---
+spring:
+  profiles: test
 
 providerController:
   val: 5001test
-  
-  
-server:
-  port: 5001
-
-    
-eureka:
-  client:
-    service-url:
-       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
