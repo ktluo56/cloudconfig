@@ -5,10 +5,13 @@ spring:
 server:
   port: 5001
 
+providerController:
+  val: 5001none
 
 spring:
   application:
     name: dept-provider
+    
 eureka:
   client:
     service-url:
@@ -18,6 +21,8 @@ eureka:
 ---
 spring:
   profiles: dev     #开发环境
+  application: 
+    name: provider-dev
   
 providerController:
   val: 5001dev
@@ -26,7 +31,9 @@ providerController:
 
 ---    
 spring:
-  profiles: test    
+  profiles: test   
+  application: 
+    name: provider-test  
 
 providerController:
   val: 5001test
