@@ -1,0 +1,5 @@
+在vm参数中,
+如果没有设置MaxDirectMemorySize的值,那么DirectMemory会与heap共用MaxHeapSize的值,即它们的和不超过该值即可
+如果设置了,那么DirectMemory与heap会各自受限于对应参数
+
+metaspace不受heap和DirectMemory限制

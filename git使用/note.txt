@@ -1,0 +1,5 @@
+#
+指定用户名clone
+举例:
+https://github.com/ktluo56/note.git
+https://uname:pwd@github.com/ktluo56/note.git
