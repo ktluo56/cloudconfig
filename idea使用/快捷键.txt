@@ -1,0 +1,9 @@
+生成构造/get/set/toString alt +shift + s
+提示方法参数类型(Parameter Info) ctrl+alt+/
+查看文档说明(quick documentation) F2
+2.收起所有的方法(collapse all) alt + shift + c
+33.打开所有方法(expand all) alt+shift+x
+34.打开代码所在硬盘文件夹(show in explorer) ctrl+shift+x
+局部变量抽取为成员变量(introduce field) alt+shift+
+35.生成 try-catch 等(surround with) alt+shift+z
+46.选择要粘贴的内容(Show in Explorer) ctrl+shift+V
